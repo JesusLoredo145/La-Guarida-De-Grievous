@@ -34,20 +34,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Crear Artículo - Wiki Star Wars</title>
-    <style>
-        body { font-family: Arial; background-color: #0b0c10; color: #fff; padding: 20px; }
-        form { background-color: #1f2833; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; }
-        input, textarea { width: 100%; padding: 8px; margin: 8px 0; }
-        button { background-color: #45a29e; color: white; padding: 10px; border: none; width: 100%; }
-    </style>
+    <title>Crear Artículo - Wiki Star Wars</title
+    <link rel="stylesheet" href="styles.css">                                    
 </head>
 <body>
-    <h2 style="text-align:center;">Nuevo Artículo</h2>
+    <div class="crearContenido">
+    <h2 class="titulo" style="text-align:center;">Nuevo Artículo</h2>
     <form method="post" action="">
-        <input type="text" name="titulo" placeholder="Título" required>
-        <textarea name="contenido" placeholder="Contenido" rows="10" required></textarea>
+        <input type="text" name="titulo" placeholder="Título" required class="agregaTitulo">
+        <textarea name="contenido" placeholder="Contenido" rows="10" required class="textoContenido"></textarea>
         <button type="submit">Guardar</button>
     </form>
+    </div>    
 </body>
 </html>
